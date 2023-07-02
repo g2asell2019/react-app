@@ -1,0 +1,17 @@
+.box-relevant{
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-flow: row;
+}
+
+.box-middle{
+    display:"inline-block";
+    margin: 0;
+    
+}
+
+.box-middle-main{
+    width:100%;
+}
