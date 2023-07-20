@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import MainNewsPaper from "./NewsPaper/MainNewsPaper.tsx";
 //import App from './App.tsx'
 import "./index.css";
-import Message from "./Message.tsx";
-import ListGroup from "./ListGroup.tsx";
+
+import ListGroup from "./PageHeader.tsx";
 import Tin360 from "./NewsPaper/Tin360.tsx";
 import BaoThanhNien from "./NewsPaper/BaoThanhNien.tsx";
 import SideTab from "./NewsPaper/SideTab.tsx";
