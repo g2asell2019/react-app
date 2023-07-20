@@ -17,9 +17,10 @@ export default function SideTab() {
           onChange={handleChange}
           aria-label="basic tabs example"
           sx={{ display: "flex" }}
+          TabIndicatorProps={{style: {fontSize:"2rem"}}}
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
+          <Tab label="Tin mới" style={{fontWeight:"700",textTransform:"none", fontSize:"1rem"}}  {...a11yProps(0)}/>
+          <Tab label="Đọc nhiều" style={{fontWeight:"700",textTransform:"none", fontSize:"1rem"}} {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
