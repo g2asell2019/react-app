@@ -11,9 +11,8 @@ export default function MainNewsPaper() {
         className="box-middle-main"
         // invalid state when put in css
         sx={{
-          minWidth:"900px",
+          minWidth: "900px",
           margin: "auto",
-          
         }}
       >
         <div
@@ -21,34 +20,42 @@ export default function MainNewsPaper() {
           style={{
             display: "flex",
             width: "100%",
-            flexFlow:"row",
-            flexShrink:0
+            flexFlow: "row",
+            flexShrink: 0,
             //border: "4px dashed blue",
           }}
         >
-          <div style={
-            {
-              display:"block"
-            }
-          }>
+          <div
+            style={{
+              display: "block",
+            }}
+          >
             <img src="https://images2.thanhnien.vn/zoom/448_280/528068263637045248/2023/6/29/cb29bf23944e44101d5f-16880405314911966469883-60-0-1310-2000-crop-1688041073352846960095.jpg"></img>
           </div>
           <div
             style={{
               background: "#f7f7f7",
-              display:"inline-block",
-              padding: "1rem 2rem 1rem 2rem"
+              display: "inline-block",
+              padding: "1rem 2rem 1rem 2rem",
             }}
           >
             <div
               style={{
-                  minWidth:"400px",
-                  margin:"auto"
-
+                minWidth: "400px",
+                margin: "auto",
               }}
             >
-              <Typography variant="h4" mt={3}>
-              Xâm nhập hệ thống ngân hàng ở TP.HCM chiếm đoạt 10 tỉ đồng
+              <Typography
+                style={{
+                  fontWeight: "700",
+                  fontSize: "22px",
+                  lineHeight: "34px",
+                  marginBottom: "16px",
+                }}
+                variant="h4"
+                mt={3}
+              >
+                Xâm nhập hệ thống ngân hàng ở TP.HCM chiếm đoạt 10 tỉ đồng
               </Typography>
               <Typography variant="subtitle1" mt={2}>
                 Tại cuộc họp báo về kỳ thi tốt nghiệp THPT 2023 chiều 29.6,
@@ -71,7 +78,11 @@ export default function MainNewsPaper() {
             //border: "1px dashed red",
           }}
         >
-          <Typography variant="h5" justifyContent="center">
+          <Typography
+            style={{ fontWeight: "700", fontSize: "15px", lineHeight: "24px" }}
+            variant="h5"
+            justifyContent="center"
+          >
             Mưa lớn gây ngập nặng chiều nay: Nhiều tuyến đường ở TP.HCM 'thành
             sông', xe chết máy la liệt
           </Typography>
@@ -81,14 +92,22 @@ export default function MainNewsPaper() {
           </Typography>
         </div>
 
-        <Divider orientation="vertical" flexItem variant="middle" />
+        <Divider
+          style={{ paddingLeft: "0.5rem" }}
+          orientation="vertical"
+          flexItem
+          variant="middle"
+        />
         <div
           style={{
             marginLeft: "1rem",
             //border: "1px dashed red",
           }}
         >
-          <Typography variant="h5">
+          <Typography
+            style={{ fontWeight: "700", fontSize: "15px", lineHeight: "24px" }}
+            variant="h5"
+          >
             Mưa lớn gây ngập nặng chiều nay: Nhiều tuyến đường ở TP.HCM 'thành
             sông', xe chết máy la liệt
           </Typography>
@@ -98,7 +117,12 @@ export default function MainNewsPaper() {
           </Typography>
         </div>
 
-        <Divider orientation="vertical" flexItem variant="middle" />
+        <Divider
+          style={{ paddingLeft: "0.5rem" }}
+          orientation="vertical"
+          flexItem
+          variant="middle"
+        />
 
         <div
           style={{
@@ -106,7 +130,10 @@ export default function MainNewsPaper() {
             //border: "1px dashed red",
           }}
         >
-          <Typography variant="h5">
+          <Typography
+            style={{ fontWeight: "700", fontSize: "15px", lineHeight: "24px" }}
+            variant="h5"
+          >
             Mưa lớn gây ngập nặng chiều nay: Nhiều tuyến đường ở TP.HCM 'thành
             sông', xe chết máy la liệt
           </Typography>
