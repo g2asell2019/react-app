@@ -17,15 +17,16 @@ export default function NavBar(props:NavBarProps){
     const {children, data, value, handleChange} = props;
 
 
-    return (<AppBar>
+    return (<AppBar style={{}}>
     <Tabs
       sx={{
         width: "100%",
         color: "#292929",
         opacity: 1,
-        //position:"sticky",
+        
         //textTransform: 'none',
         backgroundColor: "white",
+        
       }}
       value={value}
       onChange={handleChange}

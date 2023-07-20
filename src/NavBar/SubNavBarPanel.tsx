@@ -27,6 +27,8 @@ export default function SubNavBarPanel(props: SubNavBarPanelProps) {
               fontWeight: "bold",
               fontSize: "2rem",
               maxWidth: "30%",
+              paddingTop: '2rem',
+              
             }}
           >
             {item.name}
