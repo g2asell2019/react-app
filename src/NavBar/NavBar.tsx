@@ -2,7 +2,7 @@ import {AppBar, Tabs, Tab} from "@mui/material";
 import {useState} from "react"
 import NavBarProps from "./NavBarProps"
 import NavBarData from "./NavBarData"
-
+import {Link} from "@mui/material"
 
 function a11yProps(index: number) {
   return {
@@ -38,7 +38,8 @@ export default function NavBar(props:NavBarProps){
     >
       {data.map((item, index) => (
         <Tab
-          key={item.name}
+          key={item.idDanhMuc}
+          value={item.idDanhMuc}
           sx={{
             opacity: 1,
             textTransform: "none",
@@ -47,9 +48,11 @@ export default function NavBar(props:NavBarProps){
               color: "#0576f0",
             },
           }}
-          label={item.name}
+          label={item.tenDanhMuc}
           {...a11yProps(index)}
           onMouseEnter={(event) => handleChange(event, index)}
+
+
           //onMouseLeave={(event) => (handleChange(event, -1))}
         />
       ))}

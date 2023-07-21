@@ -4,7 +4,7 @@ import MainNewsPaper from "./NewsPaper/MainNewsPaper.tsx";
 //import App from './App.tsx'
 import "./index.css";
 
-import ListGroup from "./PageHeader.tsx";
+import ListGroup from "./PageHeaders/PageHeader.tsx";
 import Tin360 from "./NewsPaper/Tin360.tsx";
 import BaoThanhNien from "./NewsPaper/BaoThanhNien.tsx";
 import SideTab from "./NewsPaper/SideTab.tsx";

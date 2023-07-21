@@ -1,4 +1,4 @@
-import { Menu, MenuItem, Button } from "@mui/material";
+import { Menu, MenuItem, Button, Link } from "@mui/material";
 import { ListSubheader, Divider, Grid } from "@mui/material";
 import TabPanel from "./TabPanel";
 import { useState } from "react";
@@ -6,6 +6,7 @@ import NavBarProps from "./NavBar";
 
 import { useTheme } from "@mui/material/styles";
 import NavBarData from "./NavBarData";
+import SubNavData from "./SubNavData";
 
 interface SubNavBarPanelProps {
     children?: React.ReactNode;
@@ -16,10 +17,12 @@ interface SubNavBarPanelProps {
 export default function SubNavBarPanel(props: SubNavBarPanelProps) {
   const theme = useTheme();
   const { value, data } = props;
+  console.log(data);
   return (
     <div>
       {data.map((item, index) => (
-        <TabPanel value={value} index={index} dir={theme.direction}>
+        <TabPanel key={index} value={value} index={index} dir={theme.direction}>
+          <Link href={"https://thanhnien.vn/" +item.url } underline="none">
           <ListSubheader
             sx={{
               color: "#292929",
@@ -27,12 +30,17 @@ export default function SubNavBarPanel(props: SubNavBarPanelProps) {
               fontWeight: "bold",
               fontSize: "2rem",
               maxWidth: "30%",
-              paddingTop: '2rem',
-              
+              paddingTop: '2.5rem',
+              "&:hover": {
+                color: "#0576f0",
+                background: "none",
+              },
             }}
-          >
-            {item.name}
+            
+            >
+            {item.tenDanhMuc}
           </ListSubheader>
+            </Link>
           <Divider color="blue"></Divider>
           <Grid
             alignContent="flex-start"
@@ -41,8 +49,10 @@ export default function SubNavBarPanel(props: SubNavBarPanelProps) {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             <Grid item xs={4} md={4} flexWrap="wrap">
-              {item.SubNavData?.map((subItem) => (
-                <Button  {...buttonProps()}>{subItem.name}</Button>
+              {item.danhMucCon?.map((subItem) => (
+                <Link href={"https://thanhnien.vn/" +item.url + "/" + subItem.url}>
+                <Button  {...buttonProps()}>{subItem.tenDanhMuc}</Button>
+                </Link>
               ))}
             </Grid>
           </Grid>
